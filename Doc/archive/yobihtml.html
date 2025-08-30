@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Figma MCP Project</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <!-- ⬇ COMPONENT_INSERT_POINT ⬇ -->
+        <!-- COMPONENT: header -->
+        <header data-component="header" class="header">
+            <div class="header__logo-container">
+                <img src="./assets/img/logo.png" alt="蕎麦ロゴ" class="header__logo">
+            </div>
+            <nav class="header__nav-menu">
+                <a href="#" class="header__nav-link">NEW</a>
+                <a href="#" class="header__nav-link">FOOD</a>
+                <a href="#" class="header__nav-link">TRAVEL</a>
+                <a href="#" class="header__nav-link">CONTACT</a>
+            </nav>
+            <div class="header__menu-icon">
+                <div class="header__menu-line header__menu-line--top"></div>
+                <div class="header__menu-line-container">
+                    <div class="header__menu-line header__menu-line--mid"></div>
+                </div>
+                <div class="header__menu-line header__menu-line--bottom"></div>
+            </div>
+        </header>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: hero -->
+        <section data-component="hero" class="hero">
+            <img src="./assets/img/hero.jpg" alt="蕎麦のヒーロー画像" class="hero__image">
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: soba -->
+        <section data-component="soba" class="soba">
+            <div class="inner">
+                <div class="soba__heading">
+                    <h1 class="soba__title">蕎麦</h1>
+                    <h2 class="soba__subtitle">四季折々を映すしなやかな食感</h2>
+                </div>
+                <div class="soba__body">
+                    <p class="soba__text">私がご紹介する手挽き蕎麦は、澄んだ湧き水がその豊かな香りを引き立てます。</p>
+                    <p class="soba__text">水のせせらぎに耳を傾けながら自然の中で味わう至高のひと品です。</p>
+                </div>
+            </div>
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: buttons -->
+        <section data-component="buttons" class="buttons">
+            <div class="inner">
+                <button class="buttons__nav-button">
+                    <span class="buttons__nav-label">蕎麦とは</span>
+                    <div class="buttons__nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="14" fill="#f6f6f6"/>
+                            <path d="M10 13L14 17L18 13" stroke="#6f6f6f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </button>
+                <button class="buttons__nav-button">
+                    <span class="buttons__nav-label">繊細さ</span>
+                    <div class="buttons__nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="14" fill="#f6f6f6"/>
+                            <path d="M10 13L14 17L18 13" stroke="#6f6f6f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </button>
+                <button class="buttons__nav-button">
+                    <span class="buttons__nav-label">美味しい食べ方</span>
+                    <div class="buttons__nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="14" fill="#f6f6f6"/>
+                            <path d="M10 13L14 17L18 13" stroke="#6f6f6f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: sobatoha -->
+        <section data-component="sobatoha" class="sobatoha">
+            <div class="sobatoha__heading">
+                <h1 class="sobatoha__title">蕎麦とは</h1>
+                <p class="sobatoha__subtitle">最小限の工程が引き出す上品な香り</p>
+            </div>
+            <div class="inner">
+                <div class="sobatoha__content">
+                    <div class="sobatoha__image-container">
+                        <img src="./assets/img/sobatoha-bowl01.jpg" alt="蕎麦の画像1" class="sobatoha__image">
+                    </div>
+                    <div class="sobatoha__image-container">
+                        <img src="./assets/img/sobatoha-bowl02.jpg" alt="蕎麦の画像2" class="sobatoha__image">
+                    </div>
+                    <p class="sobatoha__text">蕎麦の実本来の旨みを最大限に引き出すため、最小限の工程で仕上げた繊細な料理です。澄んだ水で締めた麺は滑らかな喉ごしとともに、豊かな香りとコシをひとくちごとに感じさせ、素材本来の旨みを凝縮した風味が、次の一杯を待ち遠しくさせます。</p>
+                </div>
+            </div>
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: sensai -->
+        <section data-component="sensai" class="sensai">
+            <div class="sensai__heading">
+                <h1 class="sensai__title">繊細さ</h1>
+                <p class="sensai__subtitle">ひとくちごとに感じる上品な味</p>
+            </div>
+            <div class="inner">
+                <div class="sensai__item">
+                    <div class="sensai__content">
+                        <div class="sensai__image-container">
+                            <img src="./assets/img/seiretsu-experience.jpg" alt="清冽な水の画像" class="sensai__image">
+                        </div>
+                        <h3 class="sensai__item-title">◾️清冽な水が生む後味</h3>
+                    </div>
+                    <div class="sensai__text-button">
+                        <p class="sensai__text">透き通った湧き水を使った蕎麦は、ひとくちで清涼感が口中に広がり、雑味のないキレのある後味を残します。</p>
+                        <button class="sensai__button">
+                            <span class="sensai__button-label">もっと見る</span>
+                            <div class="sensai__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="sensai__item">
+                    <div class="sensai__content">
+                        <div class="sensai__image-container">
+                            <img src="./assets/img/shinayaka-experience.jpg" alt="しなやかな食感の画像" class="sensai__image">
+                        </div>
+                        <h3 class="sensai__item-title">◾️しなやかな食感</h3>
+                    </div>
+                    <div class="sensai__text-button">
+                        <p class="sensai__text">手挽きによる絶妙な粗さが、蕎麦本来の風味を最大限に引き出し、口の中でしなやかに踊ります。</p>
+                        <button class="sensai__button">
+                            <span class="sensai__button-label">もっと見る</span>
+                            <div class="sensai__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="sensai__item">
+                    <div class="sensai__content">
+                        <div class="sensai__image-container">
+                            <img src="./assets/img/fukami-experience.jpg" alt="深みある香りの画像" class="sensai__image">
+                        </div>
+                        <h3 class="sensai__item-title">◾️深みある香り</h3>
+                    </div>
+                    <div class="sensai__text-button">
+                        <p class="sensai__text">蕎麦の実の芯から立ち上る香りは、上品で奥深く、食事の時間をより贅沢なものにします。</p>
+                        <button class="sensai__button">
+                            <span class="sensai__button-label">もっと見る</span>
+                            <div class="sensai__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: tabekata -->
+        <section data-component="tabekata" class="tabekata">
+            <div class="tabekata__heading">
+                <h1 class="tabekata__title">美味しい食べ方</h1>
+                <p class="tabekata__subtitle">蕎麦の喉越しと香りの楽しみ方</p>
+            </div>
+            <div class="inner">
+                <div class="tabekata__item">
+                    <div class="tabekata__card">
+                        <div class="tabekata__image-container">
+                            <img src="./assets/img/yamakake.jpg" alt="山かけ蕎麦" class="tabekata__image">
+                        </div>
+                        <h3 class="tabekata__item-title">山かけ蕎麦</h3>
+                    </div>
+                    <div class="tabekata__text-button">
+                        <p class="tabekata__text">山かけ蕎麦は、ふわりととろろが蕎麦に絡み、卵の黄身がコクをプラス。ダシの効いたつゆが全体を優しく包み込み、ひとくちごとに満ちる濃厚な旨みがクセになる一杯です。</p>
+                        <button class="tabekata__button">
+                            <span class="tabekata__button-label">レシピを見る</span>
+                            <div class="tabekata__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="tabekata__item">
+                    <div class="tabekata__card">
+                        <div class="tabekata__image-container">
+                            <img src="./assets/img/ebiten.jpg" alt="海老天蕎麦" class="tabekata__image">
+                        </div>
+                        <h3 class="tabekata__item-title">海老天蕎麦</h3>
+                    </div>
+                    <div class="tabekata__text-button">
+                        <p class="tabekata__text">プリプリの海老天がのった贅沢な一杯。サクサクの衣と甘みのある海老が蕎麦の風味を引き立て、満足感のある食べ応えを楽しめます。</p>
+                        <button class="tabekata__button">
+                            <span class="tabekata__button-label">レシピを見る</span>
+                            <div class="tabekata__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="tabekata__item">
+                    <div class="tabekata__card">
+                        <div class="tabekata__image-container">
+                            <img src="./assets/img/natto.jpg" alt="納豆蕎麦" class="tabekata__image">
+                        </div>
+                        <h3 class="tabekata__item-title">納豆蕎麦</h3>
+                    </div>
+                    <div class="tabekata__text-button">
+                        <p class="tabekata__text">ヘルシーな納豆がトッピングされた蕎麦。納豆の粘り気と蕎麦の食感が絶妙にマッチし、栄養価も高い一杯です。</p>
+                        <button class="tabekata__button">
+                            <span class="tabekata__button-label">レシピを見る</span>
+                            <div class="tabekata__button-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9" cy="9" r="9" fill="#f6f6f6"/>
+                                    <path d="M8.5 7L11 9.5L8.5 12" stroke="#6f6f6f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END_COMPONENT -->
+
+        <!-- COMPONENT: footer -->
+        <footer data-component="footer" class="footer">
+            <div class="footer__logo-container">
+                <img src="./assets/img/logo.png" alt="蕎麦ロゴ" class="footer__logo">
+            </div>
+        </footer>
+        <!-- END_COMPONENT -->
+        <!-- ⬆ COMPONENT_INSERT_POINT ⬆ -->
+    </body>
+</html>

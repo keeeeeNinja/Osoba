@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp:*)",
+      "mcp__figma-dev-mode-mcp-server__get_code",
+      "mcp__figma-dev-mode-mcp-server__get_image",
+      "mcp__figma-dev-mode-mcp-server__get_variable_defs",
+      "Bash(python3:*)",
+      "mcp__ide__executeCode",
+      "Read(//var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_TBdLjF/**)",
+      "Read(/var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_SxTTtB/**)",
+      "Bash(npm run lint:*)",
+      "mcp__figma-dev-mode-mcp-server__get_metadata"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

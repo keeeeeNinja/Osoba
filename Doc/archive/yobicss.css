@@ -1,0 +1,680 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* === Header (SP) === */
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+
+.header__logo-container {
+    width: 60px;
+    height: 60px;
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.header__menu-icon {
+    width: 25px;
+    height: 20px;
+    background-color: #0a0d61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__menu-line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+
+.header__menu-line-container {
+    width: 25px;
+    height: 16px;
+    background-color: #0a0d61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.header__nav-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+/* === Hero (SP) === */
+
+.hero {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+/* === Common inner container === */
+
+.inner {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* === Soba Section (SP) === */
+
+.soba {
+    width: 100%;
+    background-color: #e9e2d8;
+    padding-top: 72px;
+    padding-bottom: 56px;
+}
+
+.soba__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.soba__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.soba__subtitle {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.soba__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+.soba__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    line-height: 1.625;
+    letter-spacing: 0.06em;
+}
+
+/* === Buttons Section (SP) === */
+
+.buttons {
+    width: 100%;
+    background-color: #e9e2d8;
+    padding-top: 0;
+    padding-bottom: 126px;
+}
+
+.buttons__nav-button {
+    width: 100%;
+    height: 102px;
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 37px 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttons__nav-button:last-child {
+    margin-bottom: 0;
+}
+
+.buttons__nav-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.buttons__nav-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 16px;
+}
+
+/* === Sobatoha Section (SP) === */
+
+.sobatoha {
+    width: 100%;
+    background-color: #e9e2d8;
+}
+
+.sobatoha__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 50px 20px 24px;
+}
+
+.sobatoha__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.sobatoha__subtitle {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.sobatoha__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 134px;
+}
+
+.sobatoha__image-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sobatoha__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    border-radius: 10px;
+}
+
+.sobatoha__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.625;
+    letter-spacing: 0.06em;
+}
+
+/* === Sensai Section (SP) === */
+
+.sensai {
+    width: 100%;
+    background-color: #e9e2d8;
+}
+
+.sensai__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 50px 20px 40px;
+}
+
+.sensai__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.sensai__subtitle {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.sensai__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sensai__item:nth-child(2),
+.sensai__item:nth-child(3) {
+    padding-top: 88px;
+}
+
+.sensai__item:last-child {
+    padding-bottom: 158px;
+}
+
+.sensai__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sensai__image-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sensai__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    border-radius: 10px;
+}
+
+.sensai__item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.sensai__text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 197px;
+}
+
+.sensai__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.625;
+    letter-spacing: 0.06em;
+}
+
+.sensai__button {
+    width: 228px;
+    height: 51px;
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 16px 13px 76px;
+    cursor: pointer;
+}
+
+.sensai__button-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.5625;
+}
+
+.sensai__button-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* === Tabekata Section (SP) === */
+
+.tabekata {
+    width: 100%;
+    background-color: #e9e2d8;
+}
+
+.tabekata__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 50px 20px 40px;
+}
+
+.tabekata__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.tabekata__subtitle {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.tabekata__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabekata__item:nth-child(2),
+.tabekata__item:nth-child(3) {
+    padding-top: 64px;
+}
+
+.tabekata__item:last-child {
+    padding-bottom: 88px;
+}
+
+.tabekata__card {
+    background-color: #f3f1eb;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tabekata__image-container {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.tabekata__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    border-radius: 10px 10px 0 0;
+}
+
+.tabekata__item-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.tabekata__text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 228px;
+    background-color: #f3f1eb;
+    border-radius: 0 0 10px 10px;
+    padding: 0 28px 24px;
+}
+
+.tabekata__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.625;
+    letter-spacing: 0.06em;
+}
+
+.tabekata__button {
+    width: 228px;
+    height: 50px;
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 16px 13px 69px;
+    cursor: pointer;
+}
+
+.tabekata__button-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.5625;
+}
+
+.tabekata__button-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* === Footer (SP) === */
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo-container {
+    width: 60px;
+    height: 60px;
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 60px;
+    height: 60px;
+}
+
+@media (width >= 768px) {
+    /* === Header (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 707:194, pc_node_id: 723:212 */
+
+    .header {
+        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+        padding-right: clamp(56px, calc(-154.29px + 27.38vw), 240px);
+    }
+
+    .header__logo-container {
+        width: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+    }
+
+    .header__menu-icon {
+        display: none;
+    }
+
+    .header__nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: clamp(16px, calc(13.71px + 0.3vw), 18px);
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .header__nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+
+    .header__nav-link:hover {
+        opacity: 0.8;
+    }
+
+    /* === Hero (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 865:21, pc_node_id: 877:20 */
+
+    .hero__image {
+        aspect-ratio: 3.2;
+        object-fit: cover;
+        object-position: right top;
+    }
+
+    /* === Soba Section (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 707:202, pc_node_id: 723:365 */
+
+    .soba {
+        padding: clamp(96px, calc(50.29px + 5.95vw), 136px) clamp(40px, calc(-390.86px + 56.1vw), 417px) 32px;
+    }
+
+    .soba__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .soba__body {
+        gap: 0;
+        max-width: none;
+    }
+
+    .soba__text {
+        line-height: 1.25;
+    }
+
+    /* === Buttons Section (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 709:207, pc_node_id: 723:389 */
+
+    .buttons {
+        padding-bottom: clamp(36px, calc(13.14px + 2.98vw), 56px);
+    }
+
+    .buttons .inner {
+        padding-left: clamp(40px, calc(-186.29px + 29.46vw), 238px);
+        padding-right: clamp(40px, calc(-186.29px + 29.46vw), 238px);
+        display: flex;
+        flex-direction: row;
+        gap: clamp(20px, calc(6.29px + 1.79vw), 32px);
+    }
+
+    .buttons__nav-button {
+        flex: 1;
+        width: auto;
+        height: clamp(59px, calc(35.0px + 3.12vw), 80px);
+        justify-content: center;
+        padding: clamp(20px, calc(8.57px + 1.49vw), 30px) clamp(16px, calc(6.86px + 1.19vw), 24px);
+        margin-bottom: 0;
+    }
+
+    .buttons__nav-icon {
+        width: clamp(16px, calc(6.86px + 1.19vw), 24px);
+        height: clamp(16px, calc(6.86px + 1.19vw), 24px);
+        right: clamp(16px, calc(6.86px + 1.19vw), 24px);
+    }
+
+    .buttons__nav-icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* === Sobatoha Section (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 709:233, pc_node_id: 725:394 */
+
+    .sobatoha .inner {
+        padding-left: clamp(40px, calc(-188.57px + 29.76vw), 240px);
+        padding-right: clamp(40px, calc(-188.57px + 29.76vw), 240px);
+    }
+
+    .sobatoha__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 16px;
+        padding-bottom: clamp(100px, calc(49.71px + 6.55vw), 144px);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sobatoha__image-container:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sobatoha__image-container:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .sobatoha__image-container {
+        border-radius: clamp(5px, calc(-0.71px + 0.74vw), 10px);
+    }
+
+    .sobatoha__image {
+        height: clamp(204px, calc(110.29px + 12.2vw), 286px);
+        object-fit: cover;
+        aspect-ratio: auto;
+        border-radius: clamp(5px, calc(-0.71px + 0.74vw), 10px);
+    }
+
+    .sobatoha__text {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        line-height: 1.25;
+    }
+
+    /* === Sensai Section (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC・タブレット版 frame tab_node_id: 711:20, pc_node_id: 725:399 */
+
+    .sensai__heading {
+        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(13.71px + 2.38vw), 48px);
+    }
+
+
+}
