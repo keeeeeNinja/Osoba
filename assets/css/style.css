@@ -1,0 +1,957 @@
+@charset "UTF-8";
+
+/* Reset CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    font-size: 100%;
+    color: #333;
+    background-color: #e9e2d8;
+    line-height: normal;
+}
+
+/* Common styles */
+
+.inner {
+    width: 100%;
+}
+
+/* Header Component */
+
+.header {
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 0 16px 0 0;
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+    background-color: #0a0d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.header__menu {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.header__menu-line:nth-child(2) {
+    margin: 7px 0;
+}
+
+/* SP版ではナビメニューを非表示 */
+
+.header__nav {
+    display: none;
+}
+
+/* Hero Component */
+
+.hero {
+    width: 100%;
+    background-color: #fff;
+}
+
+.hero__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: right top;
+    display: block;
+}
+
+/* Soba Component */
+
+.soba {
+    width: 100%;
+    background-color: #e9e2d8;
+    margin-top: 72px;
+    padding: 0 20px;
+}
+
+.soba__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.soba__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.soba__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.soba__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.96px;
+}
+
+.soba__text--first {
+    width: 204px;
+    margin: 0 auto 32px;
+}
+
+.soba__text--second {
+    width: 325px;
+    margin: 0 auto;
+}
+
+/* Buttons Component */
+
+.buttons {
+    width: 100%;
+    background-color: #e9e2d8;
+    margin-top: 56px;
+    padding: 0 20px;
+}
+
+.buttons__button {
+    width: 100%;
+    height: 102px;
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 25%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 37px 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.buttons__button:last-child {
+    margin-bottom: 0;
+}
+
+.buttons__label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1.4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons__icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Sobatoha Component */
+
+.sobatoha {
+    width: 100%;
+    background-color: #e9e2d8;
+    margin-top: 126px;
+    padding: 50px 20px 24px;
+}
+
+.sobatoha__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sobatoha__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.sobatoha__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+/* Sobatoha Content Component */
+
+.sobatoha-content {
+    width: 100%;
+    background-color: #e9e2d8;
+    padding: 0 20px;
+}
+
+.sobatoha-content__images {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.sobatoha-content__image-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sobatoha-content__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.sobatoha-content__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 26px;
+    letter-spacing: 0.96px;
+    margin: 0;
+}
+
+/* Sensai Component */
+
+.sensai {
+    width: 100%;
+    background-color: #e9e2d8;
+    margin-top: 134px;
+    padding: 50px 20px 40px;
+}
+
+.sensai__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sensai__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.sensai__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+/* Sensai Item Components - BEM共通スタイル */
+
+.sensai-item {
+    width: 100%;
+    background-color: #e9e2d8;
+    padding: 0 20px;
+}
+
+.sensai-item--2,
+.sensai-item--3 {
+    margin-top: 88px;
+}
+
+.sensai-item__image-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.sensai-item__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.sensai-item__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 224px;
+}
+
+.sensai-item__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+.sensai-item__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 26px;
+    letter-spacing: 0.96px;
+    margin: 0 0 auto;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.sensai-item__button {
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 10px;
+    width: 228px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    padding: 13px 16px 13px 76px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sensai-item__button-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sensai-item__button-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Tabekata Component */
+
+.tabekata {
+    width: 100%;
+    background-color: #e9e2d8;
+    margin-top: 158px;
+    padding: 50px 20px 40px;
+}
+
+.tabekata__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.tabekata__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.tabekata__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+/* Tabekata Item Components - BEM共通スタイル */
+
+.tabekata-item {
+    width: 100%;
+    background-color: #e9e2d8;
+    padding: 0 20px;
+}
+
+.tabekata-item--2,
+.tabekata-item--3 {
+    margin-top: 64px;
+}
+
+.tabekata-item__image-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.tabekata-item__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 372 / 228;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.tabekata-item__content {
+    background-color: #f3f1eb;
+    border-radius: 0 0 10px 10px;
+    padding: 24px 28px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabekata-item__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 16px;
+    text-align: center;
+    letter-spacing: 1.08px;
+}
+
+.tabekata-item__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 26px;
+    letter-spacing: 0.96px;
+    margin: 0 0 auto;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+}
+
+.tabekata-item__button {
+    background-color: #bec2c5;
+    border: none;
+    border-radius: 10px;
+    width: 228px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabekata-item__button-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabekata-item__button-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Footer Component */
+
+.footer {
+    width: 100%;
+    background-color: #0a0d61;
+    margin-top: 88px;
+    height: 60px;
+}
+
+.footer .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer__logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+/* ============================= */
+
+/* PC・タブレット版メディアクエリ */
+
+/* ============================= */
+
+@media (width >= 768px) {
+
+    .inner {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* === Header (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:212, タブレット版 frame 707:194 */
+
+    .header {
+        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+        padding: 0 clamp(56px, calc(-154.29px + 27.38vw), 240px) 0 0;
+    }
+    
+    .header__logo,
+    .header__logo-img {
+        width: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+    }
+    
+    .header__menu {
+        display: none;
+    }
+    
+    .header__nav {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        font-size: clamp(16px, calc(13.71px + 0.30vw), 18px);
+        color: #fff;
+    }
+    
+    .header__nav-link {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 0.8px;
+    }
+    
+    .header__nav-link:hover {
+        opacity: 0.8;
+    }
+    
+    /* === Hero (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC版 frame 877:20, タブレット版 frame 865:21 */
+
+    .hero {
+        height: 31.25vw;
+        min-height: 240px;
+    }
+    
+    .hero__image {
+        height: 100%;
+        object-position: center 20%;
+        aspect-ratio: unset;
+    }
+    
+    /* === Soba (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:365, タブレット版 frame 707:202 */
+
+    .soba {
+        margin-top: clamp(96px, calc(50.29px + 5.95vw), 136px);
+        padding: 0 clamp(40px, calc(-388.57px + 55.80vw), 415px);
+    }
+    
+    .soba__heading {
+        margin-bottom: 24px;
+    }
+    
+    .soba__subtitle {
+        font-size: 20px;
+    }
+    
+    .soba__text {
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .soba__text--first {
+        margin-bottom: 0;
+    }
+    
+    /* === Buttons (PC・タブレット版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:389, タブレット版 frame 709:207 */
+
+    .buttons {
+        margin-top: clamp(32px, calc(4.57px + 3.57vw), 56px);
+        padding: 0 clamp(40px, calc(-186.29px + 29.46vw), 238px);
+    }
+    
+    .buttons .inner {
+        display: flex;
+        flex-direction: row;
+        gap: clamp(20px, calc(6.29px + 1.79vw), 32px);
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .buttons__button {
+        width: clamp(216px, calc(120.00px + 12.50vw), 300px);
+        height: clamp(59px, calc(35.00px + 3.12vw), 80px);
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 24px;
+    }
+    
+    .buttons__label {
+        font-size: 16px;
+        letter-spacing: 0;
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .buttons__icon {
+        width: clamp(16px, calc(6.86px + 1.19vw), 24px);
+        height: clamp(16px, calc(6.86px + 1.19vw), 24px);
+        position: static;
+        right: auto;
+        top: auto;
+        transform: none;
+    }
+    
+    /* === Sobatoha (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 724:391, タブレット版 frame 709:227 */
+    
+    .sobatoha {
+        margin-top: clamp(36px, calc(8.57px + 3.57vw), 56px);
+        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(22.86px + 1.19vw), 40px);
+    }
+    
+    .sobatoha__subtitle {
+        font-size: 20px;
+    }
+    
+    /* === Sobatoha Content (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 725:394, タブレット版 frame 709:233 */
+    
+    .sobatoha-content {
+        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+    }
+    
+    .sobatoha-content__images {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .sobatoha-content__image-container {
+        width: 50%;
+    }
+    
+    .sobatoha-content__image {
+        aspect-ratio: 472 / 286;
+        border-radius: 10px;
+    }
+    
+    .sobatoha-content__text {
+        color: #000;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+    
+    /* === Sensai (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 725:399, タブレット版 frame 711:20 */
+    
+    .sensai {
+        margin-top: clamp(100px, calc(50.29px + 6.55vw), 144px);
+        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(13.71px + 2.38vw), 48px);
+    }
+    
+    .sensai__title {
+        line-height: normal;
+    }
+    
+    .sensai__subtitle {
+        font-size: 20px;
+    }
+    
+    /* === Sensai Items (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 728:23/41/51, タブレット版 frame 711:23/716:21/1114:78 */
+    
+    .sensai-item {
+        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+    }
+    
+    .sensai-item--2,
+    .sensai-item--3 {
+        margin-top: clamp(64px, calc(18.29px + 5.95vw), 104px);
+    }
+    
+    .sensai-item .inner {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        height: clamp(170px, calc(92.29px + 10.12vw), 238px);
+    }
+    
+    /* 2番目のアイテムは左右順序を逆転 */
+    
+    .sensai-item--2 .inner {
+        flex-direction: row-reverse;
+    }
+    
+    .sensai-item__image-container {
+        width: 50%;
+        margin-bottom: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sensai-item__image {
+        height: 100%;
+        aspect-ratio: unset;
+        border-radius: 10px;
+    }
+    
+    .sensai-item__content {
+        width: 50%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 0;
+    }
+    
+    .sensai-item__title {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 24px;
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    .sensai-item__text {
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        display: block;
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        overflow: visible;
+        -webkit-box-orient: unset;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .sensai-item__button {
+        width: clamp(138px, calc(105.71px + 4.17vw), 160px);
+        height: clamp(32px, calc(22.86px + 1.19vw), 38px);
+        gap: 0;
+        padding: 12px 8px 12px 46px;
+        align-self: flex-end;
+    }
+    
+    .sensai-item__button-label {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .sensai-item__button-icon {
+        width: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        height: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        right: 8px;
+    }
+    
+    /* === Tabekata (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 728:63, タブレット版 frame 716:44 */
+    
+    .tabekata {
+        margin-top: clamp(84px, calc(15.43px + 8.93vw), 144px);
+        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(13.71px + 2.38vw), 48px);
+    }
+    
+    .tabekata__subtitle {
+        font-size: 20px;
+    }
+    
+    /* === Tabekata Items Grid (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 729:66, タブレット版 frame 716:48 */
+    
+    .tabekata-items-grid {
+        background-color: #e9e2d8;
+        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+    }
+    
+    .tabekata-items-grid .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .tabekata-item {
+        background-color: #f3f0eb;
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: clamp(276px, calc(121.71px + 20.09vw), 411px);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tabekata-item--2,
+    .tabekata-item--3 {
+        margin-top: 0;
+    }
+    
+    .tabekata-item .inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tabekata-item__image-container {
+        height: clamp(134px, calc(53.71px + 10.42vw), 188px);
+        flex-shrink: 0;
+    }
+    
+    .tabekata-item__image {
+        height: 100%;
+        aspect-ratio: unset;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .tabekata-item__content {
+        padding: 16px 24px 24px;
+        height: auto;
+        flex: 1;
+        justify-content: flex-start;
+    }
+    
+    .tabekata-item__title {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        line-height: 20px;
+    }
+    
+    .tabekata-item__text {
+        line-height: 20px;
+        letter-spacing: 0;
+        margin: 0 0 16px;
+        max-height: 80px;
+    }
+    
+    .tabekata-item__button {
+        width: clamp(138px, calc(105.71px + 4.17vw), 160px);
+        height: 32px;
+        padding: 9px 8px 9px 40px;
+    }
+    
+    .tabekata-item__button-label {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .tabekata-item__button-icon {
+        width: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        height: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        right: 8px;
+    }
+    
+    /* === Footer (PC・タブレット版) === */
+    
+    /* 差分根拠: Figma PC版 frame 734:46, タブレット版 frame 723:85 */
+    
+    .footer {
+        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+    }
+    
+    .footer__logo {
+        width: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+    }
+    
+    .footer__logo-img {
+        width: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+    }
+    
+}
+

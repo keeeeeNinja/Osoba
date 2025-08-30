@@ -1,0 +1,15 @@
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Node / Web一般
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Secrets
+.env
+.env.*
