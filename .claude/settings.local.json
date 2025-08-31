@@ -10,7 +10,11 @@
       "Read(//var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_TBdLjF/**)",
       "Read(/var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_SxTTtB/**)",
       "Bash(npm run lint:*)",
-      "mcp__figma-dev-mode-mcp-server__get_metadata"
+      "mcp__figma-dev-mode-mcp-server__get_metadata",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(lsof:*)"
     ],
     "deny": [],
     "ask": []
