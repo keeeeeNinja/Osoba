@@ -110,4 +110,27 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburgerMenu.checked = false;
         }
     });
+    
+    // ボタンクリック時の色変化
+    const buttons = document.querySelectorAll('.buttons__button, .sensai-item__button, .tabekata-item__button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // クリックされたボタンにactiveクラスを追加
+            this.classList.add('active');
+            // 200ms後に元の色に戻す
+            setTimeout(() => {
+                this.classList.remove('active');
+            }, 200);
+        });
+    });
+});
+
+// スクロール時のフェードイン効果
+$(window).on("scroll",function(){
+    $('[data-fadeIn]').each(function(index,el){
+        if($(window).scrollTop() > ($(el).offset().top - $(window).height() / 2)){
+            $(el).addClass('is-over');
+        }
+    });
 });

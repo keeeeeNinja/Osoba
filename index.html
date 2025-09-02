@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="body">
@@ -56,35 +57,35 @@
     <!-- COMPONENT: buttons -->
     <section data-component="buttons" class="buttons">
         <div class="inner">
-            <button class="buttons__button">
+            <a href="#sobatoha" class="buttons__button">
                 <span class="buttons__label">蕎麦とは</span>
                 <svg class="buttons__icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <circle cx="14" cy="14" r="13" fill="#f6f6f6" stroke="#ddd"/>
                     <path d="M10 12l4 4 4-4" stroke="#6f6f6f" stroke-width="2" fill="none"/>
                 </svg>
-            </button>
-            <button class="buttons__button">
+            </a>
+            <a href="#sensai" class="buttons__button">
                 <span class="buttons__label">繊細さ</span>
                 <svg class="buttons__icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <circle cx="14" cy="14" r="13" fill="#f6f6f6" stroke="#ddd"/>
                     <path d="M10 12l4 4 4-4" stroke="#6f6f6f" stroke-width="2" fill="none"/>
                 </svg>
-            </button>
-            <button class="buttons__button">
+            </a>
+            <a href="#tabekata" class="buttons__button">
                 <span class="buttons__label">美味しい食べ方</span>
                 <svg class="buttons__icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <circle cx="14" cy="14" r="13" fill="#f6f6f6" stroke="#ddd"/>
                     <path d="M10 12l4 4 4-4" stroke="#6f6f6f" stroke-width="2" fill="none"/>
                 </svg>
-            </button>
+            </a>
         </div>
     </section>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: sobatoha -->
-    <section data-component="sobatoha" class="sobatoha">
+    <section data-component="sobatoha" class="sobatoha" id="sobatoha">
         <div class="inner">
-            <div class="sobatoha__heading">
+            <div class="sobatoha__heading" data-fadeIn>
                 <h2 class="sobatoha__title">蕎麦とは</h2>
                 <p class="sobatoha__subtitle">最小限の工程が引き出す上品な香り</p>
             </div>
@@ -95,7 +96,7 @@
     <!-- COMPONENT: sobatoha-content -->
     <section data-component="sobatoha-content" class="sobatoha-content">
         <div class="inner">
-            <div class="sobatoha-content__images">
+            <div class="sobatoha-content__images" data-fadeIn>
                 <div class="sobatoha-content__image-container">
                     <img src="./assets/img/sobatoha-bowl01.jpg" alt="蕎麦打ちの様子" class="sobatoha-content__image">
                 </div>
@@ -103,15 +104,15 @@
                     <img src="./assets/img/sobatoha-bowl02.jpg" alt="蕎麦を食べる様子" class="sobatoha-content__image">
                 </div>
             </div>
-            <p class="sobatoha-content__text">蕎麦の実本来の旨みを最大限に引き出すため、最小限の工程で仕上げた繊細な料理です。澄んだ水で締めた麺は滑らかな喉ごしとともに、豊かな香りとコシをひとくちごとに感じさせ、素材本来の旨みを凝縮した風味が、次の一杯を待ち遠しくさせます。</p>
+            <p class="sobatoha-content__text" data-fadeIn>蕎麦の実本来の旨みを最大限に引き出すため、最小限の工程で仕上げた繊細な料理です。澄んだ水で締めた麺は滑らかな喉ごしとともに、豊かな香りとコシをひとくちごとに感じさせ、素材本来の旨みを凝縮した風味が、次の一杯を待ち遠しくさせます。</p>
         </div>
     </section>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: sensai -->
-    <section data-component="sensai" class="sensai">
+    <section data-component="sensai" class="sensai" id="sensai">
         <div class="inner">
-            <div class="sensai__heading">
+            <div class="sensai__heading" data-fadeIn>
                 <h2 class="sensai__title">繊細さ</h2>
                 <p class="sensai__subtitle">ひとくちごとに感じる上品な味</p>
             </div>
@@ -120,7 +121,7 @@
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: sensai-item-1 -->
-    <section data-component="sensai-item-1" class="sensai-item sensai-item--1">
+    <section data-component="sensai-item-1" class="sensai-item sensai-item--1" data-fadeIn>
         <div class="inner">
             <div class="sensai-item__image-container">
                 <img src="./assets/img/seiretsu-experience.jpg" alt="清冽な水が生む後味" class="sensai-item__image">
@@ -128,20 +129,20 @@
             <div class="sensai-item__content">
                 <h3 class="sensai-item__title">◾️清冽な水が生む後味</h3>
                 <p class="sensai-item__text">透き通った湧き水を使った蕎麦は、ひとくちで清涼感が口中に広がり、雑味のないキレのある後味を残します。</p>
-                <button class="sensai-item__button">
+                <a href="#seiretsu-detail" class="sensai-item__button">
                     <span class="sensai-item__button-label">もっと見る</span>
                     <svg class="sensai-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: sensai-item-2 -->
-    <section data-component="sensai-item-2" class="sensai-item sensai-item--2">
+    <section data-component="sensai-item-2" class="sensai-item sensai-item--2" data-fadeIn>
         <div class="inner">
             <div class="sensai-item__image-container">
                 <img src="./assets/img/shinayaka-experience.jpg" alt="しなやかに響くコシ" class="sensai-item__image">
@@ -149,20 +150,20 @@
             <div class="sensai-item__content">
                 <h3 class="sensai-item__title">◾️しなやかに響くコシ</h3>
                 <p class="sensai-item__text">ひと口噛むごとにしなやかなコシと程よい反発力がうまれ、滑らかな食感が最後のひとくちまで飽きさせません。手挽きの丁寧な製法が生み出す上質な歯応えを存分に味わえます。</p>
-                <button class="sensai-item__button">
+                <a href="#shinayaka-detail" class="sensai-item__button">
                     <span class="sensai-item__button-label">もっと見る</span>
                     <svg class="sensai-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: sensai-item-3 -->
-    <section data-component="sensai-item-3" class="sensai-item sensai-item--3">
+    <section data-component="sensai-item-3" class="sensai-item sensai-item--3" data-fadeIn>
         <div class="inner">
             <div class="sensai-item__image-container">
                 <img src="./assets/img/fukami-experience.jpg" alt="深みを感じる香り" class="sensai-item__image">
@@ -170,22 +171,22 @@
             <div class="sensai-item__content">
                 <h3 class="sensai-item__title">◾️深みを感じる香り</h3>
                 <p class="sensai-item__text">挽きたての蕎麦は、実の香りが際立ち、ひとくちすするとほのかな甘みとナッツのようなコクが広がります。粒感が口に心地よく残り、深い味わいをお楽しみいただけます。</p>
-                <button class="sensai-item__button">
+                <a href="#fukami-detail" class="sensai-item__button">
                     <span class="sensai-item__button-label">もっと見る</span>
                     <svg class="sensai-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: tabekata -->
-    <section data-component="tabekata" class="tabekata">
+    <section data-component="tabekata" class="tabekata" id="tabekata">
         <div class="inner">
-            <div class="tabekata__heading">
+            <div class="tabekata__heading" data-fadeIn>
                 <h2 class="tabekata__title">美味しい食べ方</h2>
                 <p class="tabekata__subtitle">蕎麦の喉越しと香りの楽しみ方</p>
             </div>
@@ -193,7 +194,7 @@
     </section>
     <!-- END_COMPONENT -->
     
-    <div class="tabekata-items-grid">
+    <div class="tabekata-items-grid" data-fadeIn>
         <div class="inner">
     <!-- COMPONENT: tabekata-item-1 -->
     <section data-component="tabekata-item-1" class="tabekata-item tabekata-item--1">
@@ -204,13 +205,13 @@
             <div class="tabekata-item__content">
                 <h3 class="tabekata-item__title">山かけ蕎麦</h3>
                 <p class="tabekata-item__text">山かけ蕎麦は、ふわりととろろが蕎麦に絡み、卵の黄身がコクをプラス。ダシの効いたつゆが全体を優しく包み込み、ひとくちごとに満ちる濃厚な旨みがクセになる一杯です。</p>
-                <button class="tabekata-item__button">
+                <a href="#yamakake-recipe" class="tabekata-item__button">
                     <span class="tabekata-item__button-label">レシピを見る</span>
                     <svg class="tabekata-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -225,13 +226,13 @@
             <div class="tabekata-item__content">
                 <h3 class="tabekata-item__title">海老天蕎麦</h3>
                 <p class="tabekata-item__text">海老天蕎麦は大ぶりの海老天をのせた贅沢な一杯です。サクサクの衣とプリプリの海老が、香り高いそばと合わさり、透き通ったつゆをまとって口いっぱいに広がっていきます。</p>
-                <button class="tabekata-item__button">
+                <a href="#ebiten-recipe" class="tabekata-item__button">
                     <span class="tabekata-item__button-label">レシピを見る</span>
                     <svg class="tabekata-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -246,13 +247,13 @@
             <div class="tabekata-item__content">
                 <h3 class="tabekata-item__title">納豆めかぶ蕎麦</h3>
                 <p class="tabekata-item__text">納豆めかぶ蕎麦は、ねばり強い納豆とコリコリしためかぶが蕎麦に絡みつき、白ゴマとワサビが風味をしっかり引き立てます。香り高いつゆでいただく食べ応えのある蕎麦です。</p>
-                <button class="tabekata-item__button">
+                <a href="#natto-mekabu-recipe" class="tabekata-item__button">
                     <span class="tabekata-item__button-label">レシピを見る</span>
                     <svg class="tabekata-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
                         <path d="M8 7l4 3-4 3" stroke="#6f6f6f" stroke-width="1.5" fill="none"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
