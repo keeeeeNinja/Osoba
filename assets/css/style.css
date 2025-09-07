@@ -441,7 +441,6 @@ html, body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
     overflow: hidden;
 }
 
@@ -586,7 +585,6 @@ html, body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    line-clamp: 4;
     overflow: hidden;
 }
 
@@ -939,7 +937,6 @@ html, body {
         text-align: left;
         display: block;
         -webkit-line-clamp: unset;
-        line-clamp: unset;
         overflow: visible;
         -webkit-box-orient: unset;
         width: 100%;

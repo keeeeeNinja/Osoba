@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ボタンクリック時の色変化
-    const buttons = document.querySelectorAll('.buttons__button, .sensai-item__button, .tabekata-item__button');
+    const buttons = document.querySelectorAll('.buttons__button, .classic-sweet-item__button, .seasonal-new-item__button');
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
