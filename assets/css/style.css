@@ -120,7 +120,7 @@ html, body {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: right top;
+    object-position: 52% center;
     display: block;
 }
 
@@ -731,7 +731,6 @@ html, body {
 
     .soba {
         margin-top: clamp(96px, calc(50.29px + 5.95vw), 136px);
-        padding: 0 clamp(40px, calc(-388.57px + 55.80vw), 415px);
     }
     
     .soba__heading {
