@@ -31,16 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const modalHTML = await loadModal();
         modalContent.innerHTML = modalHTML;
         
-        // デバッグ: 要素の存在確認
-        console.log('Modal loaded, searching for flame-sp...');
+        // 要素の存在確認
         const flameSpElement = modalContent.querySelector('.flame-sp');
-        console.log('flame-sp element found:', flameSpElement);
         
         // バツボタン（flame-sp）のクリックイベント
         if (flameSpElement) {
-            console.log('Adding click event to flame-sp');
             flameSpElement.addEventListener('click', function(e) {
-                console.log('flame-sp clicked!');
                 e.stopPropagation();
                 hideModal();
                 hamburgerMenu.checked = false;
@@ -52,9 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 全体クリックテスト
         modalContent.addEventListener('click', function(e) {
-            console.log('Modal content clicked:', e.target);
             if (e.target.classList.contains('flame-sp')) {
-                console.log('flame-sp detected via event target');
                 hideModal();
                 hamburgerMenu.checked = false;
             }
