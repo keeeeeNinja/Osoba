@@ -46,14 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             flameSpElement.style.width = '100%';
         }
         
-        // 全体クリックテスト
-        modalContent.addEventListener('click', function(e) {
-            if (e.target.classList.contains('flame-sp')) {
-                hideModal();
-                hamburgerMenu.checked = false;
-            }
-        });
-        
         // モーダルを表示
         modalOverlay.style.display = 'flex';
         document.body.style.overflow = 'hidden'; // スクロールを無効化
