@@ -988,6 +988,8 @@ html, body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
+        max-width: 1024px;
+        margin: 0 auto;
     }
     
     .seasonal-new-item {
