@@ -697,14 +697,14 @@ html, body {
     /* 差分根拠: Figma PC版 frame 723:212, タブレット版 frame 707:194 */
 
     .header {
-        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
-        padding: 0 clamp(56px, calc(-154.29px + 27.38vw), 240px) 0 0;
+        height: 46px;
+        padding: 0 56px 0 0;
     }
     
     .header__logo,
     .header__logo-img {
-        width: clamp(46px, calc(-11.14px + 7.44vw), 96px);
-        height: clamp(46px, calc(-11.14px + 7.44vw), 96px);
+        width: 46px;
+        height: 46px;
     }
     
     .header__menu {
@@ -717,7 +717,7 @@ html, body {
         gap: 16px;
         font-family: Inter, sans-serif;
         font-weight: 600;
-        font-size: clamp(16px, calc(13.71px + 0.30vw), 18px);
+        font-size: 16px;
         color: var(--button-text-active);
     }
     
@@ -751,7 +751,7 @@ html, body {
     /* 差分根拠: Figma PC版 frame 723:365, タブレット版 frame 707:202 */
 
     .sweets {
-        margin-top: clamp(96px, calc(50.29px + 5.95vw), 136px);
+        margin-top: 96px;
     }
     
     .sweets__heading {
@@ -776,21 +776,21 @@ html, body {
     /* 差分根拠: Figma PC版 frame 723:389, タブレット版 frame 709:207 */
 
     .buttons {
-        margin-top: clamp(32px, calc(4.57px + 3.57vw), 56px);
-        padding: 0 clamp(40px, calc(-186.29px + 29.46vw), 238px);
+        margin-top: 32px;
+        padding: 0 40px;
     }
     
     .buttons .inner {
         display: flex;
         flex-direction: row;
-        gap: clamp(20px, calc(6.29px + 1.79vw), 32px);
+        gap: 20px;
         align-items: stretch;
         justify-content: center;
     }
     
     .buttons__button {
-        width: clamp(216px, calc(120.00px + 12.50vw), 300px);
-        height: clamp(59px, calc(35.00px + 3.12vw), 80px);
+        width: 216px;
+        height: 59px;
         margin-bottom: 0;
         display: flex;
         align-items: center;
@@ -810,8 +810,8 @@ html, body {
     }
     
     .buttons__icon {
-        width: clamp(16px, calc(6.86px + 1.19vw), 24px);
-        height: clamp(16px, calc(6.86px + 1.19vw), 24px);
+        width: 16px;
+        height: 16px;
         position: static;
         right: auto;
         top: auto;
@@ -823,8 +823,8 @@ html, body {
     /* 差分根拠: Figma PC版 frame 724:391, タブレット版 frame 709:227 */
     
     .autumn-harvest {
-        margin-top: clamp(36px, calc(8.57px + 3.57vw), 56px);
-        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(22.86px + 1.19vw), 40px);
+        margin-top: 36px;
+        padding: 60px 40px 32px;
     }
     
     .autumn-harvest__subtitle {
@@ -836,7 +836,7 @@ html, body {
     /* 差分根拠: Figma PC版 frame 725:394, タブレット版 frame 709:233 */
     
     .autumn-harvest-content {
-        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+        padding: 0 40px;
     }
     
     .autumn-harvest-content__images {
@@ -865,8 +865,8 @@ html, body {
     /* 差分根拠: Figma PC版 frame 725:399, タブレット版 frame 711:20 */
     
     .classic-sweet {
-        margin-top: clamp(100px, calc(50.29px + 6.55vw), 144px);
-        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(13.71px + 2.38vw), 48px);
+        margin-top: 100px;
+        padding: 60px 40px 32px;
     }
     
     .classic-sweet__subtitle {
@@ -878,12 +878,12 @@ html, body {
     /* 差分根拠: Figma PC版 frame 728:23/41/51, タブレット版 frame 711:23/716:21/1114:78 */
     
     .classic-sweet-item {
-        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+        padding: 0 40px;
     }
     
     .classic-sweet-item--2,
     .classic-sweet-item--3 {
-        margin-top: clamp(64px, calc(18.29px + 5.95vw), 104px);
+        margin-top: 64px;
     }
     
     .classic-sweet-item .inner {
@@ -891,7 +891,7 @@ html, body {
         flex-direction: row;
         gap: 16px;
         align-items: center;
-        height: clamp(170px, calc(92.29px + 10.12vw), 238px);
+        min-height: 170px;
     }
     
     /* 2番目のアイテムは左右順序を逆転 */
@@ -903,23 +903,25 @@ html, body {
     .classic-sweet-item__image-container {
         width: 50%;
         margin-bottom: 0;
-        height: 100%;
+        min-height: 170px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .classic-sweet-item__image {
-        height: 100%;
-        aspect-ratio: unset;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 344 / 170;
         border-radius: var(--border-radius);
     }
     
     .classic-sweet-item__content {
         width: 50%;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: space-between;
         height: 100%;
+        min-height: 170px;
         padding: 0;
     }
     
@@ -944,8 +946,8 @@ html, body {
     }
     
     .classic-sweet-item__button {
-        width: clamp(138px, calc(105.71px + 4.17vw), 160px);
-        height: clamp(32px, calc(22.86px + 1.19vw), 38px);
+        width: 138px;
+        height: 32px;
         gap: 0;
         padding: 12px 8px 12px 46px;
         align-self: flex-end;
@@ -957,8 +959,8 @@ html, body {
     }
     
     .classic-sweet-item__button-icon {
-        width: clamp(10px, calc(6.86px + 0.42vw), 14px);
-        height: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        width: 10px;
+        height: 10px;
         right: 8px;
     }
     
@@ -967,8 +969,8 @@ html, body {
     /* 差分根拠: Figma PC版 frame 728:63, タブレット版 frame 716:44 */
     
     .seasonal-new {
-        margin-top: clamp(84px, calc(15.43px + 8.93vw), 144px);
-        padding: clamp(60px, calc(37.14px + 2.98vw), 80px) clamp(40px, calc(-188.57px + 29.76vw), 240px) clamp(32px, calc(13.71px + 2.38vw), 48px);
+        margin-top: 84px;
+        padding: 60px 40px 32px;
     }
     
     .seasonal-new__subtitle {
@@ -981,7 +983,7 @@ html, body {
     
     .seasonal-new-grid {
         background-color: var(--primary-bg);
-        padding: 0 clamp(40px, calc(-188.57px + 29.76vw), 240px);
+        padding: 0 40px;
     }
     
     .seasonal-new-grid .inner {
@@ -997,7 +999,7 @@ html, body {
         padding: 0;
         border-radius: var(--border-radius);
         overflow: hidden;
-        min-height: clamp(276px, calc(121.71px + 20.09vw), 411px);
+        min-height: 276px;
         display: flex;
         flex-direction: column;
     }
@@ -1014,13 +1016,13 @@ html, body {
     }
     
     .seasonal-new-item__image-container {
-        height: clamp(134px, calc(53.71px + 10.42vw), 188px);
         flex-shrink: 0;
     }
     
     .seasonal-new-item__image {
-        height: 100%;
-        aspect-ratio: unset;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 372 / 228;
         border-radius: var(--border-radius) 10px 0 0;
     }
     
@@ -1046,7 +1048,7 @@ html, body {
     }
     
     .seasonal-new-item__button {
-        width: clamp(138px, calc(105.71px + 4.17vw), 160px);
+        width: 138px;
         height: 35px;
         padding: 9px 8px 9px 40px;
     }
@@ -1057,8 +1059,8 @@ html, body {
     }
     
     .seasonal-new-item__button-icon {
-        width: clamp(10px, calc(6.86px + 0.42vw), 14px);
-        height: clamp(10px, calc(6.86px + 0.42vw), 14px);
+        width: 10px;
+        height: 10px;
         right: 8px;
     }
     
@@ -1067,17 +1069,17 @@ html, body {
     /* 差分根拠: Figma PC版 frame 734:46, タブレット版 frame 723:85 */
     
     .footer {
-        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+        height: 70px;
     }
     
     .footer__logo {
-        width: clamp(70px, calc(-5.43px + 9.82vw), 136px);
-        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+        width: 70px;
+        height: 70px;
     }
     
     .footer__logo-img {
-        width: clamp(70px, calc(-5.43px + 9.82vw), 136px);
-        height: clamp(70px, calc(-5.43px + 9.82vw), 136px);
+        width: 70px;
+        height: 70px;
     }
     
 }
