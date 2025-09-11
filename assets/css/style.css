@@ -256,6 +256,11 @@ html, body {
     color: var(--button-text-active);
 }
 
+.buttons__button:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
 .buttons__label {
     font-size: var(--font-size-lg);
     font-weight: 600;
@@ -491,6 +496,11 @@ html, body {
     color: var(--button-text-active);
 }
 
+.classic-sweet-item__button:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
 
 /* Tabekata Component */
 
@@ -633,6 +643,11 @@ html, body {
     color: var(--button-text-active);
 }
 
+.seasonal-new-item__button:focus-visible {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
 
 /* Fade In Animation */
 
@@ -729,6 +744,12 @@ html, body {
     
     .header__nav-link:hover {
         opacity: 0.8;
+    }
+    
+    .header__nav-link:focus-visible {
+        outline: 2px solid #007acc;
+        outline-offset: 2px;
+        border-radius: 2px;
     }
     
     /* === Hero (PC・タブレット版) === */
@@ -1359,6 +1380,8 @@ html, body {
     border-radius: 2px;
     flex-shrink: 0;
     width: 100%;
+    border: none;
+    outline: none;
 }
 
 .modal-overlay .modal-content .element-heading-new-sp,
@@ -1367,6 +1390,25 @@ html, body {
 .modal-overlay .modal-content .element-heading-contact-sp {
     color: white;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.modal-overlay .modal-content .element-heading-new-sp:hover,
+.modal-overlay .modal-content .element-heading-food-sp:hover,
+.modal-overlay .modal-content .element-heading-travel-sp:hover,
+.modal-overlay .modal-content .element-heading-contact-sp:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-overlay .modal-content .element-heading-new-sp:focus,
+.modal-overlay .modal-content .element-heading-food-sp:focus,
+.modal-overlay .modal-content .element-heading-travel-sp:focus,
+.modal-overlay .modal-content .element-heading-contact-sp:focus {
+    color: white;
+    text-decoration: none;
+    outline: none;
 }
 
 .modal-overlay .modal-content .container-new-sp {
@@ -1392,4 +1434,18 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 60px;
+}
+
+/* フォーカストラップ対応: flame-spのアウトライン調整 */
+
+.modal-content .flame-sp {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-content .flame-sp:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }

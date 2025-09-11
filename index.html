@@ -34,7 +34,7 @@
     <!-- COMPONENT: header -->
     <header class="header">
         <div class="header__logo">
-            <img src="./assets/img/logo.png" alt="スイーツロゴ" class="header__logo-img" width="400" height="400" loading="lazy" decoding="async">
+            <img src="./assets/img/logo.png" alt="秋スイーツ特集" class="header__logo-img" width="400" height="400" loading="lazy" decoding="async">
         </div>
         <nav class="header__nav">
             <a href="#" class="header__nav-link">NEW</a>
@@ -43,8 +43,8 @@
             <a href="#" class="header__nav-link">CONTACT</a>
         </nav>
         <div class="header__menu">
-            <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
-            <label for="menu-toggle" class="header__menu-trigger">
+            <input type="checkbox" id="menu-toggle" class="header__menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" class="header__menu-trigger" aria-label="メニューを開く" aria-expanded="false">
                 <span class="header__menu-line"></span>
                 <span class="header__menu-line"></span>
                 <span class="header__menu-line"></span>
@@ -55,7 +55,7 @@
     
     <!-- COMPONENT: hero -->
     <div class="hero">
-        <img src="./assets/img/MV.jpg" alt="秋のスイーツ風景" class="hero__image" width="412" height="412">
+        <img src="./assets/img/MV.jpg" alt="カラフルな秋のスイーツが並ぶ美しいテーブル" class="hero__image" width="412" height="412">
     </div>
     <!-- END_COMPONENT -->
     
@@ -73,7 +73,7 @@
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: buttons -->
-    <div class="buttons">
+    <nav class="buttons" aria-label="ページ内ナビゲーション">
         <div class="inner">
             <a href="#autumn-harvest" class="buttons__button">
                 <span class="buttons__label">秋の実り</span>
@@ -97,7 +97,7 @@
                 </svg>
             </a>
         </div>
-    </div>
+    </nav>
     <!-- END_COMPONENT -->
     
     <!-- COMPONENT: autumn-harvest -->
@@ -116,10 +116,10 @@
         <div class="inner">
             <div class="autumn-harvest-content__images" data-fadeIn>
                 <div class="autumn-harvest-content__image-container">
-                    <img src="./assets/img/Akino_minori01.jpg" alt="秋の実りスイーツ" class="autumn-harvest-content__image" width="944" height="572" loading="lazy" decoding="async">
+                    <img src="./assets/img/Akino_minori01.jpg" alt="栗やかぼちゃを使った色鮮やかな秋のスイーツプレート" class="autumn-harvest-content__image" width="944" height="572" loading="lazy" decoding="async">
                 </div>
                 <div class="autumn-harvest-content__image-container">
-                    <img src="./assets/img/Akino_minori02.jpg" alt="秋のスイーツを楽しむ様子" class="autumn-harvest-content__image" width="944" height="572" loading="lazy" decoding="async">
+                    <img src="./assets/img/Akino_minori02.jpg" alt="秋の実りスイーツを味わう人々の温かな食事風景" class="autumn-harvest-content__image" width="944" height="572" loading="lazy" decoding="async">
                 </div>
             </div>
             <p class="autumn-harvest-content__text" data-fadeIn>実りの秋は、甘さがもっとも深まる季節です。栗やさつまいもや果実は濃厚でやさしい味わいになり、スイーツにすれば秋そのものを味わえます。秋とスイーツが寄り添うのは、季節がくれる小さなご褒美だからかもしれません。</p>
@@ -142,12 +142,12 @@
     <section class="classic-sweet-item classic-sweet-item--1" data-fadeIn>
         <div class="inner">
             <div class="classic-sweet-item__image-container">
-                <img src="./assets/img/Oudou01.jpg" alt="王道のモンブラン" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
+                <img src="./assets/img/Oudou01.jpg" alt="生クリームと栗ペーストで装飾された上品なモンブラン" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
             </div>
             <div class="classic-sweet-item__content">
                 <h3 class="classic-sweet-item__title">◾️栗の香りがとける瞬間</h3>
                 <p class="classic-sweet-item__text">しっとりとした食感と、栗の深いコク。モンブランならではの繊細な層が、秋の午後を贅沢なひとときに変えてくれます。</p>
-                <a href="#" class="classic-sweet-item__button">
+                <a href="#" class="classic-sweet-item__button" aria-label="栗の香りがとける瞬間についてもっと見る">
                     <span class="classic-sweet-item__button-label">もっと見る</span>
                     <svg class="classic-sweet-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -163,12 +163,12 @@
     <section class="classic-sweet-item classic-sweet-item--2" data-fadeIn>
         <div class="inner">
             <div class="classic-sweet-item__image-container">
-                <img src="./assets/img/Oudou02.jpg" alt="焼きたてのアップルパイ" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
+                <img src="./assets/img/Oudou02.jpg" alt="黄金色に焼き上がったサクサクのアップルパイ" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
             </div>
             <div class="classic-sweet-item__content">
                 <h3 class="classic-sweet-item__title">◾️焼きたてが香る幸せ</h3>
                 <p class="classic-sweet-item__text">サクサクとした食感に続く、しっとりとしたりんごの甘酸っぱさ。手間をかけて焼き上げたアップルパイは、定番だからこそ心に残る一品です。</p>
-                <a href="#" class="classic-sweet-item__button">
+                <a href="#" class="classic-sweet-item__button" aria-label="焼きたてが香る幸せについてもっと見る">
                     <span class="classic-sweet-item__button-label">もっと見る</span>
                     <svg class="classic-sweet-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -184,12 +184,12 @@
     <section class="classic-sweet-item classic-sweet-item--3" data-fadeIn>
         <div class="inner">
             <div class="classic-sweet-item__image-container">
-                <img src="./assets/img/Oudou03.jpg" alt="香ばしいほっこり甘み" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
+                <img src="./assets/img/Oudou03.jpg" alt="ほくほくに焼き上げられた香ばしいさつまいもスイーツ" class="classic-sweet-item__image" width="944" height="476" loading="lazy" decoding="async">
             </div>
             <div class="classic-sweet-item__content">
                 <h3 class="classic-sweet-item__title">◾️香ばしいほっこり甘み</h3>
                 <p class="classic-sweet-item__text">ほくほくの甘みと香ばしさが重なり合い、食べ進めるほどに深い余韻が広がります。素材の持つやさしさをそのまま味わえる、秋の定番スイーツです。</p>
-                <a href="#" class="classic-sweet-item__button">
+                <a href="#" class="classic-sweet-item__button" aria-label="香ばしいほっこり甘みについてもっと見る">
                     <span class="classic-sweet-item__button-label">もっと見る</span>
                     <svg class="classic-sweet-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -217,12 +217,12 @@
     <!-- COMPONENT: seasonal-new-item-1 -->
     <section class="seasonal-new-item seasonal-new-item--1">
         <div class="seasonal-new-item__image-container">
-            <img src="./assets/img/Tanoshimikata01.jpg" alt="いちじくのタルト" class="seasonal-new-item__image" width="618" height="376" loading="lazy" decoding="async">
+            <img src="./assets/img/Tanoshimikata01.jpg" alt="新鮮ないちじくが美しく盛り付けられたタルト" class="seasonal-new-item__image" width="618" height="376" loading="lazy" decoding="async">
         </div>
         <div class="seasonal-new-item__content">
             <h3 class="seasonal-new-item__title">いちじくのタルト</h3>
             <p class="seasonal-new-item__text">熟れたいちじくのやわらかな甘みとタルト生地の香ばしさが重なります。果汁がじんわり広がり、クリームのなめらかさが瑞々しさを引き立てる、秋の午後にぴったりの一品です。</p>
-            <a href="#" class="seasonal-new-item__button">
+            <a href="#" class="seasonal-new-item__button" aria-label="いちじくのタルトについてもっと見る">
                 <span class="seasonal-new-item__button-label">もっと見る</span>
                 <svg class="seasonal-new-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -236,12 +236,12 @@
     <!-- COMPONENT: seasonal-new-item-2 -->
     <section class="seasonal-new-item seasonal-new-item--2">
         <div class="seasonal-new-item__image-container">
-            <img src="./assets/img/Tanoshimikata02.jpg" alt="マスカットパフェ" class="seasonal-new-item__image" width="619" height="376" loading="lazy" decoding="async">
+            <img src="./assets/img/Tanoshimikata02.jpg" alt="透明感のあるマスカットがたっぷり入った爽やかなパフェ" class="seasonal-new-item__image" width="619" height="376" loading="lazy" decoding="async">
         </div>
         <div class="seasonal-new-item__content">
             <h3 class="seasonal-new-item__title">マスカットパフェ</h3>
             <p class="seasonal-new-item__text">みずみずしいマスカットを重ねた爽やかなパフェ。果汁がはじけるように広がり、クリームのまろやかさと食感が重なって最後まで清涼感を楽しめます。</p>
-            <a href="#" class="seasonal-new-item__button">
+            <a href="#" class="seasonal-new-item__button" aria-label="マスカットパフェについてもっと見る">
                 <span class="seasonal-new-item__button-label">もっと見る</span>
                 <svg class="seasonal-new-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -255,12 +255,12 @@
     <!-- COMPONENT: seasonal-new-item-3 -->
     <section class="seasonal-new-item seasonal-new-item--3">
         <div class="seasonal-new-item__image-container">
-            <img src="./assets/img/Tanoshimikata03.jpg" alt="ぶどうのレアチーズ" class="seasonal-new-item__image" width="618" height="376" loading="lazy" decoding="async">
+            <img src="./assets/img/Tanoshimikata03.jpg" alt="濃厚なレアチーズケーキに紫のぶどうが華やかに飾られたスイーツ" class="seasonal-new-item__image" width="618" height="376" loading="lazy" decoding="async">
         </div>
         <div class="seasonal-new-item__content">
             <h3 class="seasonal-new-item__title">ぶどうレアチーズ</h3>
             <p class="seasonal-new-item__text">濃厚なレアチーズに、ぶどうの甘酸っぱさを合わせたケーキです。なめらかな口あたりと果実のジューシーさが重なり、爽やかで後味の良いひと品に仕上がりました。</p>
-            <a href="#" class="seasonal-new-item__button">
+            <a href="#" class="seasonal-new-item__button" aria-label="ぶどうレアチーズについてもっと見る">
                 <span class="seasonal-new-item__button-label">もっと見る</span>
                 <svg class="seasonal-new-item__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <circle cx="10" cy="10" r="9" fill="#f6f6f6" stroke="#ddd"/>
@@ -277,7 +277,7 @@
     <footer class="footer">
         <div class="inner">
             <div class="footer__logo">
-                <img src="./assets/img/logo.png" alt="スイーツロゴ" class="footer__logo-img" width="400" height="400" loading="lazy" decoding="async">
+                <img src="./assets/img/logo.png" alt="秋スイーツ特集" class="footer__logo-img" width="400" height="400" loading="lazy" decoding="async">
             </div>
         </div>
     </footer>
