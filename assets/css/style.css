@@ -842,7 +842,8 @@ html, body {
     .autumn-harvest-content__images {
         flex-direction: row;
         gap: 16px;
-        margin-bottom: 16px;
+        margin: 0 auto 16px;
+        max-width: 1024px;
     }
     
     .autumn-harvest-content__image-container {
@@ -892,6 +893,7 @@ html, body {
         gap: 16px;
         align-items: center;
         min-height: 170px;
+        max-width: 1024px;
     }
     
     /* 2番目のアイテムは左右順序を逆転 */
@@ -1080,6 +1082,232 @@ html, body {
     .footer__logo-img {
         width: 70px;
         height: 70px;
+    }
+    
+}
+
+/* ============================= */
+
+/* PC版メディアクエリ */
+
+/* ============================= */
+
+@media (width >= 1200px) {
+
+    .inner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    /* === Header (PC版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:212 */
+
+    .header {
+        height: 96px;
+        padding: 0 240px 0 0;
+    }
+    
+    .header__logo,
+    .header__logo-img {
+        width: 96px;
+        height: 96px;
+    }
+    
+    .header__nav {
+        font-size: 18px;
+    }
+    
+    /* === Hero (PC版) === */
+
+    /* 差分根拠: Figma PC版 frame 877:20 - サイズ 1440x449px */
+
+    .hero {
+        height: auto;
+        min-height: unset;
+    }
+    
+    .hero__image {
+        aspect-ratio: 1440 / 449;
+        object-position: 0% 75.3%;
+    }
+    
+    /* === Sweets (PC版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:365 */
+
+    .sweets {
+        margin-top: 136px;
+    }
+    
+    .sweets__text {
+        line-height: 20px;
+    }
+    
+    /* === Buttons (PC版) === */
+
+    /* 差分根拠: Figma PC版 frame 723:389 */
+
+    .buttons {
+        padding: 0 238px;
+    }
+    
+    .buttons .inner {
+        gap: 32px;
+    }
+    
+    .buttons__button {
+        width: 300px;
+        height: 80px;
+        padding: 30px 24px;
+    }
+    
+    /* === Autumn Harvest (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 724:391 */
+    
+    .autumn-harvest {
+        margin-top: 56px;
+        padding: 80px 240px 40px;
+    }
+    
+    /* === Autumn Harvest Content (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 725:394 */
+    
+    .autumn-harvest-content {
+        padding: 0 240px;
+    }
+    
+    .autumn-harvest-content__image {
+        aspect-ratio: 472 / 286;
+    }
+    
+    .autumn-harvest-content__text {
+        line-height: 20px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    /* === Classic Sweet (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 725:399 */
+    
+    .classic-sweet {
+        margin-top: 144px;
+        padding: 80px 240px 48px;
+    }
+    
+    /* === Classic Sweet Items (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 728:23 */
+    
+    .classic-sweet-item {
+        padding: 0 240px;
+    }
+    
+    .classic-sweet-item--2,
+    .classic-sweet-item--3 {
+        margin-top: 104px;
+    }
+    
+    .classic-sweet-item__image {
+        aspect-ratio: 472 / 238;
+    }
+    
+    .classic-sweet-item__content {
+        aspect-ratio: 472 / 238;
+        height: auto;
+    }
+    
+    .classic-sweet-item__title {
+        line-height: 20px;
+    }
+    
+    .classic-sweet-item__text {
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .classic-sweet-item__button {
+        width: 160px;
+        height: 38px;
+        padding: 12px 8px;
+    }
+    
+    .classic-sweet-item__button-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* === Seasonal New (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 728:63 */
+    
+    .seasonal-new {
+        margin-top: 96px;
+        padding: 80px 240px 48px;
+    }
+    
+    /* === Seasonal New Items Grid (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 733:45 */
+    
+    .seasonal-new-grid {
+        padding: 0 240px;
+    }
+    
+    .seasonal-new-item {
+        height: 411px;
+    }
+    
+    .seasonal-new-item__image {
+        aspect-ratio: 309 / 188;
+    }
+    
+    .seasonal-new-item__content {
+        padding: 16px 24px 24px;
+        height: 223px;
+    }
+    
+    .seasonal-new-item__title {
+        line-height: 20px;
+    }
+    
+    .seasonal-new-item__text {
+        line-height: 20px;
+        height: 80px;
+        margin: 0 0 16px;
+    }
+    
+    .seasonal-new-item__button {
+        width: 160px;
+        height: 35px;
+        padding: 9px 8px;
+    }
+    
+    .seasonal-new-item__button-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* === Footer (PC版) === */
+    
+    /* 差分根拠: Figma PC版 frame 734:46 */
+    
+    .footer {
+        margin-top: 160px;
+        height: 136px;
+    }
+    
+    .footer__logo {
+        width: 136px;
+        height: 136px;
+    }
+    
+    .footer__logo-img {
+        width: 136px;
+        height: 136px;
     }
     
 }
